@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/BananaBlog-frontend/static/css/main.4e86e346.css",
+    "main.js": "/BananaBlog-frontend/static/js/main.b75808c0.js",
+    "static/media/marked.cjs": "/BananaBlog-frontend/static/media/marked.0a2feaefe04db935009b.cjs",
+    "index.html": "/BananaBlog-frontend/index.html",
+    "main.4e86e346.css.map": "/BananaBlog-frontend/static/css/main.4e86e346.css.map",
+    "main.b75808c0.js.map": "/BananaBlog-frontend/static/js/main.b75808c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e86e346.css",
+    "static/js/main.b75808c0.js"
+  ]
+}
