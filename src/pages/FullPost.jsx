@@ -15,7 +15,7 @@ export const FullPost = () => {
 
 
   React.useEffect(() => {
-    axios.get(`https://bananablog-backend-production.up.railway.app/posts/${id}`).then(res => {
+    axios.get(`${process.env.REACT_APP_API_URL}/posts/${id}`).then(res => {
       setData(res.data);
       setLoading(false);
     }).catch((err) => {
@@ -33,7 +33,7 @@ export const FullPost = () => {
       <Post
         id={data._id}
         title={data.title}
-        imageUrl={data.imageUrl ? `https://bananablog-backend-production.up.railway.app${data.imageUrl}` : ''}
+        imageUrl={data.imageUrl ? `${process.env.REACT_APP_API_URL}${data.imageUrl}` : ''}
         user={data.user}
         createdAt={data.createdAt}
         viewsCount={data.viewsCount}
