@@ -15,7 +15,6 @@ export const Home = () => {
   const dispatch = useDispatch();
   const userData = useSelector(state => state.auth.data);
 
-  console.log("!!!!!!!!!", process.env.REACT_APP_API_URL)
   console.log(userData)
 
   const { posts, tags } = useSelector(state => state.posts);
