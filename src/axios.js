@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: "bananablog-backend-production.up.railway.app",
+    baseURL: "https://bananablog-backend-production.up.railway.app/",
 });
 
 instance.interceptors.request.use((config) => { // мидлвар который будет проверять на каждый запрос есть ли токен и вшивать его в Authorization
