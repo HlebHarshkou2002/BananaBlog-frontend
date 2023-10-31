@@ -27,6 +27,9 @@ export const Home = () => {
     dispatch(fetchTags());
   }, [])
 
+  console.log("!!!!!!!!!", process.env.REACT_APP_API_URL)
+
+
   return (
     <>
       <Tabs style={{ marginBottom: 15 }} value={0} aria-label="basic tabs example">
