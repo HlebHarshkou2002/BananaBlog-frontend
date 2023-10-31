@@ -16,6 +16,8 @@ function App() {
     dispatch(fetchAuthMe()) // при первом рендере приложения сразу проверяем, авторизованы ли мы
   }, [])
 
+  console.log("!!!!!!!!!", process.env.REACT_APP_API_URL)
+
   return (
     <>
       <Header />
