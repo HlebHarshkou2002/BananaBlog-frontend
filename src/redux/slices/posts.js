@@ -17,11 +17,11 @@ export const fetchRemovePost = createAsyncThunk('posts/fetchRemovePost', async (
 
 const initialState = {
     posts: {
-        items: [],
+        items: ["Какой-то пост"],
         status: "loading",
     },
     tags: {
-        items: [],
+        items: ["Какой-то тэг"],
         status: "loading",
     },
 }
