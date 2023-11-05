@@ -11,10 +11,13 @@ import Skeleton from "@mui/material/Skeleton";
 import { SideBlock } from "./SideBlock";
 
 export const TagsBlock = ({ items, isLoading = true }) => {
+
+  let arrayTags = ["Какой-то тэг", "Ещё один тэг"];
+
   return (
     <SideBlock title="Тэги">
       <List>
-        {(isLoading ? [...Array(5)] : items).map((name, i) => (
+        {(isLoading ? arrayTags : items).map((name, i) => (
           <a
             style={{ textDecoration: "none", color: "black" }}
             href={`/tags/${name}`}
