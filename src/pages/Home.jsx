@@ -27,6 +27,7 @@ export const Home = () => {
     dispatch(fetchTags());
   }, [])
 
+  let postsArray = ["Первый пост", "Второй пост"];
 
 
   return (
@@ -37,7 +38,7 @@ export const Home = () => {
       </Tabs>
       <Grid container spacing={4}>
         <Grid xs={8} item>
-          {(isPostsLoading ? [...Array(5)] : posts.items).map((obj, index) => (
+          {(isPostsLoading ? postsArray : posts.items).map((obj, index) => (
             isPostsLoading ? (
               <Post key={index} isLoading={true}/>
             ) : (
