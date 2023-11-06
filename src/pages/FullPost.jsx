@@ -28,9 +28,9 @@ export const FullPost = () => {
     return <Post isLoading={isLoading} isFullPost />
   }
 
-  if(!data) {
+  
     data.tags = ["Какой-то тэг"]
-  }
+  
 
   return (
     <>
