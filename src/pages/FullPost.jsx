@@ -15,7 +15,7 @@ export const FullPost = () => {
 
 
   React.useEffect(() => {
-    axios.get(`https://posts/bananablog-backend-production.up.railway.app/posts/${id}`).then(res => {
+    axios.get(`https://bananablog-backend-production.up.railway.app/posts/${id}`).then(res => {
       setData(res.data);
       setLoading(false);
     }).catch((err) => {
