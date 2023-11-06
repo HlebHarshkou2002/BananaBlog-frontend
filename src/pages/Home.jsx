@@ -45,7 +45,7 @@ export const Home = () => {
               <Post
                 _id={obj._id}
                 title={obj.title}
-                imageUrl={obj.imageUrl ? `${process.env.REACT_APP_API_URL}${obj.imageUrl}` : ''}
+                imageUrl={obj.imageUrl ? `https://bananablog-backend-production.up.railway.app${obj.imageUrl}` : ''}
                 user={obj.user}
                 createdAt={obj.createdAt}
                 viewsCount={obj.viewsCount}
